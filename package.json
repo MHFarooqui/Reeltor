@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "serve": "node ./index.js",
+    "serve": "node ./Index.js",
     "build": "npm install"
   },
   "dependencies": {

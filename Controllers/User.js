@@ -12,7 +12,7 @@ const register = async (req, res) => {
         console.log(req.body)
         const { userName, Password, Mobile_number, bio } = req.body;
         // used bcrypt to encode the password
-        const hashedPassword = await bcrypt.hash(Password, process.env.SALT);
+        const hashedPassword = await bcrypt.hash(Password, parseInt(process.env.SALT) || salt);
 
         const newUser = await db.query(`INSERT INTO users(
                                         user_name, password, Mobile_number, bio, Availability_from, Availability_Till)

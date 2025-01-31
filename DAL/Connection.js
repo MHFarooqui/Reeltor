@@ -7,7 +7,7 @@ const db = pgp({
     user: process.env.USER,
     password: process.env.PASSWORD,
     host: process.env.HOST,
-    port: process.env.PORT,
+    port: process.env.DBPORT,
 });
 
 const connectDb = () => {

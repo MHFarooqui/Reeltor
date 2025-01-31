@@ -1,7 +1,7 @@
 {
   "scripts": {
     "serve": "node ./Index.js",
-    "install": "npm install"
+    "insall-dependencies": "npm install"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",

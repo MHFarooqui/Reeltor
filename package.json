@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "serve": "nodemon index.js"
+    "serve": "node ./index.js",
+    "build": "npm install"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
